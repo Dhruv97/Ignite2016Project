@@ -7,21 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7391E502EFB1D0C01D43C625 /* Pods_Freebie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AA25BFDA4AB5FFF03804A30 /* Pods_Freebie.framework */; };
 		FCD2FBC91DD97DFE008B88EC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD2FBC81DD97DFE008B88EC /* AppDelegate.swift */; };
 		FCD2FBCB1DD97DFE008B88EC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD2FBCA1DD97DFE008B88EC /* ViewController.swift */; };
-		FCD2FBCE1DD97DFE008B88EC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCD2FBCC1DD97DFE008B88EC /* Main.storyboard */; };
+		FCD2FBCE1DD97DFE008B88EC /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCD2FBCC1DD97DFE008B88EC /* Login.storyboard */; };
 		FCD2FBD01DD97DFE008B88EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCD2FBCF1DD97DFE008B88EC /* Assets.xcassets */; };
 		FCD2FBD31DD97DFE008B88EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCD2FBD11DD97DFE008B88EC /* LaunchScreen.storyboard */; };
+		FCD2FBDC1DD980F3008B88EC /* Map.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCD2FBDB1DD980F3008B88EC /* Map.storyboard */; };
+		FCD2FBDE1DD98107008B88EC /* List.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCD2FBDD1DD98107008B88EC /* List.storyboard */; };
+		FCD2FBE01DD98113008B88EC /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCD2FBDF1DD98113008B88EC /* Settings.storyboard */; };
+		FCD2FBE21DD98571008B88EC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FCD2FBE11DD98571008B88EC /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9AA25BFDA4AB5FFF03804A30 /* Pods_Freebie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Freebie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C5AC2FFB95CB9ABAEDED6BB9 /* Pods-Freebie.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Freebie.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Freebie/Pods-Freebie.debug.xcconfig"; sourceTree = "<group>"; };
+		E0EE4F5F383767E450968303 /* Pods-Freebie.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Freebie.release.xcconfig"; path = "Pods/Target Support Files/Pods-Freebie/Pods-Freebie.release.xcconfig"; sourceTree = "<group>"; };
 		FCD2FBC51DD97DFE008B88EC /* Freebie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Freebie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCD2FBC81DD97DFE008B88EC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FCD2FBCA1DD97DFE008B88EC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		FCD2FBCD1DD97DFE008B88EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FCD2FBCD1DD97DFE008B88EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Login.storyboard; sourceTree = "<group>"; };
 		FCD2FBCF1DD97DFE008B88EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FCD2FBD21DD97DFE008B88EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FCD2FBD41DD97DFE008B88EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FCD2FBDB1DD980F3008B88EC /* Map.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Map.storyboard; sourceTree = "<group>"; };
+		FCD2FBDD1DD98107008B88EC /* List.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = List.storyboard; sourceTree = "<group>"; };
+		FCD2FBDF1DD98113008B88EC /* Settings.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
+		FCD2FBE11DD98571008B88EC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +41,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7391E502EFB1D0C01D43C625 /* Pods_Freebie.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0B26BD3EA7FC5D43A7376F53 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C5AC2FFB95CB9ABAEDED6BB9 /* Pods-Freebie.debug.xcconfig */,
+				E0EE4F5F383767E450968303 /* Pods-Freebie.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B032E4A25455F7FF2EC4A598 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9AA25BFDA4AB5FFF03804A30 /* Pods_Freebie.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		FCD2FBBC1DD97DFD008B88EC = {
 			isa = PBXGroup;
 			children = (
 				FCD2FBC71DD97DFE008B88EC /* Freebie */,
 				FCD2FBC61DD97DFE008B88EC /* Products */,
+				0B26BD3EA7FC5D43A7376F53 /* Pods */,
+				B032E4A25455F7FF2EC4A598 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +86,26 @@
 		FCD2FBC71DD97DFE008B88EC /* Freebie */ = {
 			isa = PBXGroup;
 			children = (
+				FCD2FBDA1DD98091008B88EC /* Views */,
 				FCD2FBC81DD97DFE008B88EC /* AppDelegate.swift */,
 				FCD2FBCA1DD97DFE008B88EC /* ViewController.swift */,
-				FCD2FBCC1DD97DFE008B88EC /* Main.storyboard */,
 				FCD2FBCF1DD97DFE008B88EC /* Assets.xcassets */,
 				FCD2FBD11DD97DFE008B88EC /* LaunchScreen.storyboard */,
 				FCD2FBD41DD97DFE008B88EC /* Info.plist */,
+				FCD2FBE11DD98571008B88EC /* GoogleService-Info.plist */,
 			);
 			path = Freebie;
+			sourceTree = "<group>";
+		};
+		FCD2FBDA1DD98091008B88EC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FCD2FBCC1DD97DFE008B88EC /* Login.storyboard */,
+				FCD2FBDB1DD980F3008B88EC /* Map.storyboard */,
+				FCD2FBDD1DD98107008B88EC /* List.storyboard */,
+				FCD2FBDF1DD98113008B88EC /* Settings.storyboard */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +115,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FCD2FBD71DD97DFE008B88EC /* Build configuration list for PBXNativeTarget "Freebie" */;
 			buildPhases = (
+				868CE5A8A1E7DA666CC5F86E /* [CP] Check Pods Manifest.lock */,
 				FCD2FBC11DD97DFE008B88EC /* Sources */,
 				FCD2FBC21DD97DFE008B88EC /* Frameworks */,
 				FCD2FBC31DD97DFE008B88EC /* Resources */,
+				349228C91908F7811C1EAFF5 /* [CP] Embed Pods Frameworks */,
+				B45191EB6E05C4856D629FD5 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -126,11 +173,63 @@
 			files = (
 				FCD2FBD31DD97DFE008B88EC /* LaunchScreen.storyboard in Resources */,
 				FCD2FBD01DD97DFE008B88EC /* Assets.xcassets in Resources */,
-				FCD2FBCE1DD97DFE008B88EC /* Main.storyboard in Resources */,
+				FCD2FBDE1DD98107008B88EC /* List.storyboard in Resources */,
+				FCD2FBE01DD98113008B88EC /* Settings.storyboard in Resources */,
+				FCD2FBCE1DD97DFE008B88EC /* Login.storyboard in Resources */,
+				FCD2FBDC1DD980F3008B88EC /* Map.storyboard in Resources */,
+				FCD2FBE21DD98571008B88EC /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		349228C91908F7811C1EAFF5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Freebie/Pods-Freebie-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		868CE5A8A1E7DA666CC5F86E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run \'pod install\' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B45191EB6E05C4856D629FD5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Freebie/Pods-Freebie-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FCD2FBC11DD97DFE008B88EC /* Sources */ = {
@@ -145,12 +244,12 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		FCD2FBCC1DD97DFE008B88EC /* Main.storyboard */ = {
+		FCD2FBCC1DD97DFE008B88EC /* Login.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				FCD2FBCD1DD97DFE008B88EC /* Base */,
 			);
-			name = Main.storyboard;
+			name = Login.storyboard;
 			sourceTree = "<group>";
 		};
 		FCD2FBD11DD97DFE008B88EC /* LaunchScreen.storyboard */ = {
@@ -259,6 +358,7 @@
 		};
 		FCD2FBD81DD97DFE008B88EC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C5AC2FFB95CB9ABAEDED6BB9 /* Pods-Freebie.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 3GKN44XQ72;
@@ -272,6 +372,7 @@
 		};
 		FCD2FBD91DD97DFE008B88EC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E0EE4F5F383767E450968303 /* Pods-Freebie.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 3GKN44XQ72;
