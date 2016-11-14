@@ -23,6 +23,7 @@
 		9AA25BFDA4AB5FFF03804A30 /* Pods_Freebie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Freebie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5AC2FFB95CB9ABAEDED6BB9 /* Pods-Freebie.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Freebie.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Freebie/Pods-Freebie.debug.xcconfig"; sourceTree = "<group>"; };
 		C9485B821DD99CCA00D43D81 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		C9485B841DD9A52F00D43D81 /* Freebie.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Freebie.entitlements; sourceTree = "<group>"; };
 		E0EE4F5F383767E450968303 /* Pods-Freebie.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Freebie.release.xcconfig"; path = "Pods/Target Support Files/Pods-Freebie/Pods-Freebie.release.xcconfig"; sourceTree = "<group>"; };
 		FCD2FBC51DD97DFE008B88EC /* Freebie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Freebie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCD2FBC81DD97DFE008B88EC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -94,6 +95,7 @@
 		FCD2FBC71DD97DFE008B88EC /* Freebie */ = {
 			isa = PBXGroup;
 			children = (
+				C9485B841DD9A52F00D43D81 /* Freebie.entitlements */,
 				FCD2FBC81DD97DFE008B88EC /* AppDelegate.swift */,
 				FCD2FBDA1DD98091008B88EC /* Views */,
 				C9485B811DD996A900D43D81 /* Controllers */,
@@ -153,6 +155,11 @@
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = 3GKN44XQ72;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -369,6 +376,7 @@
 			baseConfigurationReference = C5AC2FFB95CB9ABAEDED6BB9 /* Pods-Freebie.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Freebie/Freebie.entitlements;
 				DEVELOPMENT_TEAM = 3GKN44XQ72;
 				INFOPLIST_FILE = Freebie/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -383,6 +391,7 @@
 			baseConfigurationReference = E0EE4F5F383767E450968303 /* Pods-Freebie.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Freebie/Freebie.entitlements;
 				DEVELOPMENT_TEAM = 3GKN44XQ72;
 				INFOPLIST_FILE = Freebie/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
