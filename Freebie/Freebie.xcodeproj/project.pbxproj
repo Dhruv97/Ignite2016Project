@@ -8,8 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		7391E502EFB1D0C01D43C625 /* Pods_Freebie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AA25BFDA4AB5FFF03804A30 /* Pods_Freebie.framework */; };
+		C9485B831DD99CCA00D43D81 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9485B821DD99CCA00D43D81 /* LoginViewController.swift */; };
 		FCD2FBC91DD97DFE008B88EC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD2FBC81DD97DFE008B88EC /* AppDelegate.swift */; };
-		FCD2FBCB1DD97DFE008B88EC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD2FBCA1DD97DFE008B88EC /* ViewController.swift */; };
 		FCD2FBCE1DD97DFE008B88EC /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCD2FBCC1DD97DFE008B88EC /* Login.storyboard */; };
 		FCD2FBD01DD97DFE008B88EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCD2FBCF1DD97DFE008B88EC /* Assets.xcassets */; };
 		FCD2FBD31DD97DFE008B88EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCD2FBD11DD97DFE008B88EC /* LaunchScreen.storyboard */; };
@@ -22,10 +22,10 @@
 /* Begin PBXFileReference section */
 		9AA25BFDA4AB5FFF03804A30 /* Pods_Freebie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Freebie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5AC2FFB95CB9ABAEDED6BB9 /* Pods-Freebie.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Freebie.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Freebie/Pods-Freebie.debug.xcconfig"; sourceTree = "<group>"; };
+		C9485B821DD99CCA00D43D81 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		E0EE4F5F383767E450968303 /* Pods-Freebie.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Freebie.release.xcconfig"; path = "Pods/Target Support Files/Pods-Freebie/Pods-Freebie.release.xcconfig"; sourceTree = "<group>"; };
 		FCD2FBC51DD97DFE008B88EC /* Freebie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Freebie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCD2FBC81DD97DFE008B88EC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FCD2FBCA1DD97DFE008B88EC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FCD2FBCD1DD97DFE008B88EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Login.storyboard; sourceTree = "<group>"; };
 		FCD2FBCF1DD97DFE008B88EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FCD2FBD21DD97DFE008B88EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -65,6 +65,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		C9485B811DD996A900D43D81 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C9485B821DD99CCA00D43D81 /* LoginViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
 		FCD2FBBC1DD97DFD008B88EC = {
 			isa = PBXGroup;
 			children = (
@@ -86,9 +94,9 @@
 		FCD2FBC71DD97DFE008B88EC /* Freebie */ = {
 			isa = PBXGroup;
 			children = (
-				FCD2FBDA1DD98091008B88EC /* Views */,
 				FCD2FBC81DD97DFE008B88EC /* AppDelegate.swift */,
-				FCD2FBCA1DD97DFE008B88EC /* ViewController.swift */,
+				FCD2FBDA1DD98091008B88EC /* Views */,
+				C9485B811DD996A900D43D81 /* Controllers */,
 				FCD2FBCF1DD97DFE008B88EC /* Assets.xcassets */,
 				FCD2FBD11DD97DFE008B88EC /* LaunchScreen.storyboard */,
 				FCD2FBD41DD97DFE008B88EC /* Info.plist */,
@@ -211,7 +219,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run \'pod install\' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		B45191EB6E05C4856D629FD5 /* [CP] Copy Pods Resources */ = {
@@ -236,7 +244,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FCD2FBCB1DD97DFE008B88EC /* ViewController.swift in Sources */,
+				C9485B831DD99CCA00D43D81 /* LoginViewController.swift in Sources */,
 				FCD2FBC91DD97DFE008B88EC /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -403,6 +411,7 @@
 				FCD2FBD91DD97DFE008B88EC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
