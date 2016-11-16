@@ -24,6 +24,11 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
         // Do any additional setup after loading the view.
     }
     
+    @IBAction func Center(_ sender: Any) {
+        let location = self.MapView.userLocation
+        let region = MKCoordinateRegionMakeWithDistance(location.coordinate, 1000, 1000)
+        self.MapView.setRegion(region, animated: true)
+    }
     func locationAuth() {
         if CLLocationManager.authorizationStatus() == .authorizedWhenInUse {
             MapView.showsUserLocation = true
@@ -41,6 +46,8 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    
     
 
     /*
