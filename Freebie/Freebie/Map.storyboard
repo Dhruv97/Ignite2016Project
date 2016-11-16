@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Map View Controller-->
         <scene sceneID="cIh-fu-EIE">
             <objects>
-                <viewController id="4X4-Ss-3VS" sceneMemberID="viewController">
+                <viewController id="4X4-Ss-3VS" customClass="MapViewController" customModule="Freebie" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jOm-bt-IrA"/>
                         <viewControllerLayoutGuide type="bottom" id="K0g-Uc-7lo"/>
@@ -20,12 +20,26 @@
                     <view key="view" contentMode="scaleToFill" id="Jpp-S7-xde">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="dDG-gV-TGA">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </mapView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="dDG-gV-TGA" firstAttribute="top" secondItem="Jpp-S7-xde" secondAttribute="top" id="1BX-kN-4IE"/>
+                            <constraint firstItem="K0g-Uc-7lo" firstAttribute="top" secondItem="dDG-gV-TGA" secondAttribute="bottom" id="AJh-4t-E4I"/>
+                            <constraint firstItem="dDG-gV-TGA" firstAttribute="leading" secondItem="Jpp-S7-xde" secondAttribute="leading" id="hhN-VR-OVA"/>
+                            <constraint firstAttribute="trailing" secondItem="dDG-gV-TGA" secondAttribute="trailing" id="lIA-lb-Isn"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="MapView" destination="dDG-gV-TGA" id="aIg-rx-pwW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OaV-gu-IAy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-150" y="174"/>
+            <point key="canvasLocation" x="-151.19999999999999" y="173.16341829085459"/>
         </scene>
     </scenes>
 </document>
