@@ -48,10 +48,21 @@
                             <constraint firstItem="xrE-62-zrE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wpv-ko-XDp"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <segue destination="cdr-Ow-gcS" kind="show" identifier="Map" id="Zzj-DN-dbL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="32.799999999999997" y="38.23088455772114"/>
+        </scene>
+        <!--Map-->
+        <scene sceneID="GTD-BO-uml">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Map" id="cdr-Ow-gcS" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8ll-1v-aSO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="436" y="4"/>
         </scene>
     </scenes>
     <resources>

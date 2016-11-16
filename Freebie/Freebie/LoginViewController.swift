@@ -47,6 +47,7 @@ class LoginViewController: UIViewController {
             }
             else {
                 print("Firebase Authorization with Facebok Success")
+                self.completeSignIn()
             }
         })
     }
@@ -61,6 +62,11 @@ class LoginViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func completeSignIn() {
+        self.performSegue(withIdentifier: "Map", sender: nil)
+        
     }
     
 
