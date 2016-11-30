@@ -12,6 +12,9 @@
 		C91D9EE11DDC356E0029F02B /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91D9EE01DDC356E0029F02B /* ListViewController.swift */; };
 		C91D9EE31DDC357D0029F02B /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91D9EE21DDC357D0029F02B /* SettingsViewController.swift */; };
 		C91D9EE51DDC40E20029F02B /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91D9EE41DDC40E20029F02B /* CustomView.swift */; };
+		C931F02D1DEE7F940014B727 /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C931F02C1DEE7F940014B727 /* AddViewController.swift */; };
+		C931F0301DEE8F950014B727 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C931F02F1DEE8F950014B727 /* DataService.swift */; };
+		C931F0331DEE971C0014B727 /* Freebie.swift in Sources */ = {isa = PBXBuildFile; fileRef = C931F0321DEE971C0014B727 /* Freebie.swift */; };
 		C9485B831DD99CCA00D43D81 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9485B821DD99CCA00D43D81 /* LoginViewController.swift */; };
 		FCD2FBC91DD97DFE008B88EC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD2FBC81DD97DFE008B88EC /* AppDelegate.swift */; };
 		FCD2FBCE1DD97DFE008B88EC /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCD2FBCC1DD97DFE008B88EC /* Login.storyboard */; };
@@ -30,6 +33,9 @@
 		C91D9EE01DDC356E0029F02B /* ListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		C91D9EE21DDC357D0029F02B /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		C91D9EE41DDC40E20029F02B /* CustomView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
+		C931F02C1DEE7F940014B727 /* AddViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
+		C931F02F1DEE8F950014B727 /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		C931F0321DEE971C0014B727 /* Freebie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Freebie.swift; sourceTree = "<group>"; };
 		C9485B821DD99CCA00D43D81 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		C9485B841DD9A52F00D43D81 /* Freebie.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Freebie.entitlements; sourceTree = "<group>"; };
 		E0EE4F5F383767E450968303 /* Pods-Freebie.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Freebie.release.xcconfig"; path = "Pods/Target Support Files/Pods-Freebie/Pods-Freebie.release.xcconfig"; sourceTree = "<group>"; };
@@ -74,6 +80,22 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		C931F02E1DEE8F6E0014B727 /* Data Services */ = {
+			isa = PBXGroup;
+			children = (
+				C931F02F1DEE8F950014B727 /* DataService.swift */,
+			);
+			name = "Data Services";
+			sourceTree = "<group>";
+		};
+		C931F0311DEE97080014B727 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C931F0321DEE971C0014B727 /* Freebie.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
 		C9485B811DD996A900D43D81 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +103,7 @@
 				C91D9EDE1DDC23230029F02B /* MapViewController.swift */,
 				C91D9EE01DDC356E0029F02B /* ListViewController.swift */,
 				C91D9EE21DDC357D0029F02B /* SettingsViewController.swift */,
+				C931F02C1DEE7F940014B727 /* AddViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -88,6 +111,8 @@
 		FCD2FBBC1DD97DFD008B88EC = {
 			isa = PBXGroup;
 			children = (
+				C931F0311DEE97080014B727 /* Models */,
+				C931F02E1DEE8F6E0014B727 /* Data Services */,
 				FCD2FBC71DD97DFE008B88EC /* Freebie */,
 				FCD2FBC61DD97DFE008B88EC /* Products */,
 				0B26BD3EA7FC5D43A7376F53 /* Pods */,
@@ -265,10 +290,13 @@
 			files = (
 				C9485B831DD99CCA00D43D81 /* LoginViewController.swift in Sources */,
 				C91D9EDF1DDC23230029F02B /* MapViewController.swift in Sources */,
+				C931F02D1DEE7F940014B727 /* AddViewController.swift in Sources */,
 				C91D9EE11DDC356E0029F02B /* ListViewController.swift in Sources */,
 				C91D9EE51DDC40E20029F02B /* CustomView.swift in Sources */,
 				C91D9EE31DDC357D0029F02B /* SettingsViewController.swift in Sources */,
 				FCD2FBC91DD97DFE008B88EC /* AppDelegate.swift in Sources */,
+				C931F0331DEE971C0014B727 /* Freebie.swift in Sources */,
+				C931F0301DEE8F950014B727 /* DataService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

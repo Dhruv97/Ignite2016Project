@@ -46,8 +46,14 @@ class LoginViewController: UIViewController {
                 print("Firebase Authorization with Facebook Error")
             }
             else {
-                print("Firebase Authorization with Facebok Success")
-                self.completeSignIn()
+                print("Firebase Authorization with Facebook Success")
+            
+                
+                if let user = user {
+                    let userData = ["name": user.displayName, "email": user.email, "provider": credential.provider]
+                    
+                    self.completeSignIn(uid: user.uid, userData: userData as! Dictionary<String, String>)
+                }
             }
         })
     }
@@ -64,7 +70,8 @@ class LoginViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    func completeSignIn() {
+    func completeSignIn(uid: String, userData: Dictionary<String, String>) {
+        DataService.ds.createUser(uid: uid, userData: userData)
         self.performSegue(withIdentifier: "Map", sender: nil)
         
     }

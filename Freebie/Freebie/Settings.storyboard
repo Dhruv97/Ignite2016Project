@@ -12,7 +12,7 @@
         <!--Settings-->
         <scene sceneID="j1j-6N-DdJ">
             <objects>
-                <viewController id="z7I-O9-z4w" sceneMemberID="viewController">
+                <viewController id="z7I-O9-z4w" customClass="SettingsViewController" customModule="Freebie" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="mtN-m1-AKo"/>
                         <viewControllerLayoutGuide type="bottom" id="KWW-66-SUh"/>
@@ -20,17 +20,46 @@
                     <view key="view" contentMode="scaleToFill" id="Il1-N9-4JO">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m0J-nb-wV5">
+                                <rect key="frame" x="122" y="307" width="131" height="53"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="53" id="NUI-gN-5ex"/>
+                                    <constraint firstAttribute="width" constant="131" id="Tir-x3-kgO"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="Logout"/>
+                                <connections>
+                                    <action selector="LogoutPressed:" destination="z7I-O9-z4w" eventType="touchUpInside" id="VLm-ci-94n"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="m0J-nb-wV5" firstAttribute="centerX" secondItem="Il1-N9-4JO" secondAttribute="centerX" id="6tJ-4Z-ODA"/>
+                            <constraint firstItem="m0J-nb-wV5" firstAttribute="top" secondItem="mtN-m1-AKo" secondAttribute="bottom" constant="287" id="qwc-Lq-BLB"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Settings" image="settings" id="LTB-Xa-4nX"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <segue destination="QdQ-5i-krC" kind="show" identifier="Logout" id="Rwh-hj-NTy"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SV2-P5-fhX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="70" y="66"/>
+            <point key="canvasLocation" x="69.599999999999994" y="65.217391304347828"/>
+        </scene>
+        <!--Login-->
+        <scene sceneID="FHM-Kt-H76">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Login" id="QdQ-5i-krC" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="V5L-87-Puu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="606" y="51"/>
         </scene>
     </scenes>
     <resources>
+        <image name="Logout" width="150" height="53"/>
         <image name="settings" width="30" height="30"/>
     </resources>
 </document>
