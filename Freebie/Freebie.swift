@@ -99,7 +99,7 @@ class Freebie {
             self._timeStamp = timeStamp
         }
         
-        let _freebieRef = DataService.ds.REF_FREEBIES.child(_freebieKey)
+        _freebieRef = DataService.ds.REF_FREEBIES.child(_freebieKey)
     }
     
 }
