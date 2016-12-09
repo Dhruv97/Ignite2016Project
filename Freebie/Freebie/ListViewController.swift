@@ -10,19 +10,20 @@ import UIKit
 import Firebase
 
 class ListViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    
+    var freebiesArr = [Freebie]()
 
     @IBOutlet weak var TableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         TableView.delegate = self
         TableView.dataSource = self
 
-        // Do any additional setup after loading the view.
-    }
+        loadFreebies()
+        print("FREEBIES: \(freebiesArr.count)")
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -30,23 +31,56 @@ class ListViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+        return freebiesArr.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell")
-        return cell!
+        
+        let freebie = freebiesArr[indexPath.row]
+
+        if let cell = tableView.dequeueReusableCell(withIdentifier: "Cell") as? FreebieCell {
+            
+            
+            cell.configureCell(freebie: freebie)
+            
+            return cell
+            
+        } else {
+            
+            return FreebieCell()
+            
+        }
+        
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func loadFreebies() {
+        
+        DataService.ds.REF_FREEBIES.observe(.value, with:  { (snapshot) in
+        
+            var tempFreebiesArr = [Freebie]()
+            tempFreebiesArr = []
+            
+            if let snapshot = snapshot.children.allObjects as? [FIRDataSnapshot] {
+                
+                for snap in snapshot {
+                    
+                    if let freebieDict = snap.value as? NSDictionary {
+                        
+                        print("KEY: \(snap.key)")
+                        let freebieKey = snap.key
+                        let freebie = Freebie(freebieKey: freebieKey, freebieData: freebieDict as! Dictionary<String, AnyObject>)
+                        print("\(freebie.postedBy)")
+                        tempFreebiesArr.append(freebie)
+                        
+                    }
+                    
+                }
+                
+            }
+            self.freebiesArr = tempFreebiesArr
+            self.TableView.reloadData()
+        })
+        
     }
-    */
-
+    
 }

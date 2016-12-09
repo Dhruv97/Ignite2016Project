@@ -16,6 +16,8 @@
 		C931F0301DEE8F950014B727 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C931F02F1DEE8F950014B727 /* DataService.swift */; };
 		C931F0331DEE971C0014B727 /* Freebie.swift in Sources */ = {isa = PBXBuildFile; fileRef = C931F0321DEE971C0014B727 /* Freebie.swift */; };
 		C9485B831DD99CCA00D43D81 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9485B821DD99CCA00D43D81 /* LoginViewController.swift */; };
+		FC1DE0931DFB6C7F000EF921 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FC1DE0921DFB6C7F000EF921 /* GoogleService-Info.plist */; };
+		FC88022F1DF1062800C6EFD7 /* FreebieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC88022E1DF1062800C6EFD7 /* FreebieCell.swift */; };
 		FCD2FBC91DD97DFE008B88EC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD2FBC81DD97DFE008B88EC /* AppDelegate.swift */; };
 		FCD2FBCE1DD97DFE008B88EC /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCD2FBCC1DD97DFE008B88EC /* Login.storyboard */; };
 		FCD2FBD01DD97DFE008B88EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCD2FBCF1DD97DFE008B88EC /* Assets.xcassets */; };
@@ -23,7 +25,6 @@
 		FCD2FBDC1DD980F3008B88EC /* Map.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCD2FBDB1DD980F3008B88EC /* Map.storyboard */; };
 		FCD2FBDE1DD98107008B88EC /* List.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCD2FBDD1DD98107008B88EC /* List.storyboard */; };
 		FCD2FBE01DD98113008B88EC /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCD2FBDF1DD98113008B88EC /* Settings.storyboard */; };
-		FCD2FBE21DD98571008B88EC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FCD2FBE11DD98571008B88EC /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,8 @@
 		C9485B821DD99CCA00D43D81 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		C9485B841DD9A52F00D43D81 /* Freebie.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Freebie.entitlements; sourceTree = "<group>"; };
 		E0EE4F5F383767E450968303 /* Pods-Freebie.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Freebie.release.xcconfig"; path = "Pods/Target Support Files/Pods-Freebie/Pods-Freebie.release.xcconfig"; sourceTree = "<group>"; };
+		FC1DE0921DFB6C7F000EF921 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		FC88022E1DF1062800C6EFD7 /* FreebieCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FreebieCell.swift; sourceTree = "<group>"; };
 		FCD2FBC51DD97DFE008B88EC /* Freebie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Freebie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCD2FBC81DD97DFE008B88EC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FCD2FBCD1DD97DFE008B88EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Login.storyboard; sourceTree = "<group>"; };
@@ -48,7 +51,6 @@
 		FCD2FBDB1DD980F3008B88EC /* Map.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Map.storyboard; sourceTree = "<group>"; };
 		FCD2FBDD1DD98107008B88EC /* List.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = List.storyboard; sourceTree = "<group>"; };
 		FCD2FBDF1DD98113008B88EC /* Settings.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
-		FCD2FBE11DD98571008B88EC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 				C931F02F1DEE8F950014B727 /* DataService.swift */,
 			);
 			name = "Data Services";
+			path = ..;
 			sourceTree = "<group>";
 		};
 		C931F0311DEE97080014B727 /* Models */ = {
@@ -94,6 +97,7 @@
 				C931F0321DEE971C0014B727 /* Freebie.swift */,
 			);
 			name = Models;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		C9485B811DD996A900D43D81 /* Controllers */ = {
@@ -111,8 +115,6 @@
 		FCD2FBBC1DD97DFD008B88EC = {
 			isa = PBXGroup;
 			children = (
-				C931F0311DEE97080014B727 /* Models */,
-				C931F02E1DEE8F6E0014B727 /* Data Services */,
 				FCD2FBC71DD97DFE008B88EC /* Freebie */,
 				FCD2FBC61DD97DFE008B88EC /* Products */,
 				0B26BD3EA7FC5D43A7376F53 /* Pods */,
@@ -133,12 +135,14 @@
 			children = (
 				C9485B841DD9A52F00D43D81 /* Freebie.entitlements */,
 				FCD2FBC81DD97DFE008B88EC /* AppDelegate.swift */,
+				C931F02E1DEE8F6E0014B727 /* Data Services */,
+				C931F0311DEE97080014B727 /* Models */,
 				FCD2FBDA1DD98091008B88EC /* Views */,
 				C9485B811DD996A900D43D81 /* Controllers */,
 				FCD2FBCF1DD97DFE008B88EC /* Assets.xcassets */,
 				FCD2FBD11DD97DFE008B88EC /* LaunchScreen.storyboard */,
 				FCD2FBD41DD97DFE008B88EC /* Info.plist */,
-				FCD2FBE11DD98571008B88EC /* GoogleService-Info.plist */,
+				FC1DE0921DFB6C7F000EF921 /* GoogleService-Info.plist */,
 			);
 			path = Freebie;
 			sourceTree = "<group>";
@@ -151,6 +155,7 @@
 				FCD2FBDD1DD98107008B88EC /* List.storyboard */,
 				FCD2FBDF1DD98113008B88EC /* Settings.storyboard */,
 				C91D9EE41DDC40E20029F02B /* CustomView.swift */,
+				FC88022E1DF1062800C6EFD7 /* FreebieCell.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -229,7 +234,7 @@
 				FCD2FBE01DD98113008B88EC /* Settings.storyboard in Resources */,
 				FCD2FBCE1DD97DFE008B88EC /* Login.storyboard in Resources */,
 				FCD2FBDC1DD980F3008B88EC /* Map.storyboard in Resources */,
-				FCD2FBE21DD98571008B88EC /* GoogleService-Info.plist in Resources */,
+				FC1DE0931DFB6C7F000EF921 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,6 +295,7 @@
 			files = (
 				C9485B831DD99CCA00D43D81 /* LoginViewController.swift in Sources */,
 				C91D9EDF1DDC23230029F02B /* MapViewController.swift in Sources */,
+				FC88022F1DF1062800C6EFD7 /* FreebieCell.swift in Sources */,
 				C931F02D1DEE7F940014B727 /* AddViewController.swift in Sources */,
 				C91D9EE11DDC356E0029F02B /* ListViewController.swift in Sources */,
 				C91D9EE51DDC40E20029F02B /* CustomView.swift in Sources */,

@@ -54,7 +54,7 @@ class Freebie {
         return _freebieKey
     }
     
-    /*init (eventName:String, eventLoc: String, eventInfo: String, postedBy: String, lat: CLLocationDegrees, long: CLLocationDegrees, timeStamp: String) {
+    init (eventName:String, eventLoc: String, eventInfo: String, postedBy: String, lat: CLLocationDegrees, long: CLLocationDegrees, timeStamp: String) {
 
         self._eventName = eventName
         self._eventLoc = eventLoc
@@ -66,7 +66,7 @@ class Freebie {
         
         //_freebieRef = DataService.ds.REF_FREEBIES.child(_freebieKey)
         
-    } */
+    } 
     
     init (freebieKey: String, freebieData: Dictionary<String, AnyObject>) {
         self._freebieKey = freebieKey
