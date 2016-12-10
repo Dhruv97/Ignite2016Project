@@ -77,7 +77,7 @@ class ListViewController: UIViewController, UITableViewDelegate, UITableViewData
                 }
                 
             }
-            self.freebiesArr = tempFreebiesArr
+            self.freebiesArr = tempFreebiesArr.reversed()
             self.TableView.reloadData()
         })
         

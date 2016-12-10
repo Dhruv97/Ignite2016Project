@@ -18,6 +18,7 @@
 		C9485B831DD99CCA00D43D81 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9485B821DD99CCA00D43D81 /* LoginViewController.swift */; };
 		FC1DE0931DFB6C7F000EF921 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FC1DE0921DFB6C7F000EF921 /* GoogleService-Info.plist */; };
 		FC1DE0951DFB6F5E000EF921 /* FreebieAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC1DE0941DFB6F5E000EF921 /* FreebieAnnotation.swift */; };
+		FC1DE0971DFB7BD7000EF921 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC1DE0961DFB7BD7000EF921 /* DetailViewController.swift */; };
 		FC88022F1DF1062800C6EFD7 /* FreebieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC88022E1DF1062800C6EFD7 /* FreebieCell.swift */; };
 		FCD2FBC91DD97DFE008B88EC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD2FBC81DD97DFE008B88EC /* AppDelegate.swift */; };
 		FCD2FBCE1DD97DFE008B88EC /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCD2FBCC1DD97DFE008B88EC /* Login.storyboard */; };
@@ -43,6 +44,7 @@
 		E0EE4F5F383767E450968303 /* Pods-Freebie.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Freebie.release.xcconfig"; path = "Pods/Target Support Files/Pods-Freebie/Pods-Freebie.release.xcconfig"; sourceTree = "<group>"; };
 		FC1DE0921DFB6C7F000EF921 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		FC1DE0941DFB6F5E000EF921 /* FreebieAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FreebieAnnotation.swift; sourceTree = "<group>"; };
+		FC1DE0961DFB7BD7000EF921 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		FC88022E1DF1062800C6EFD7 /* FreebieCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FreebieCell.swift; sourceTree = "<group>"; };
 		FCD2FBC51DD97DFE008B88EC /* Freebie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Freebie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCD2FBC81DD97DFE008B88EC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -111,6 +113,7 @@
 				C91D9EE01DDC356E0029F02B /* ListViewController.swift */,
 				C91D9EE21DDC357D0029F02B /* SettingsViewController.swift */,
 				C931F02C1DEE7F940014B727 /* AddViewController.swift */,
+				FC1DE0961DFB7BD7000EF921 /* DetailViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -299,6 +302,7 @@
 				C9485B831DD99CCA00D43D81 /* LoginViewController.swift in Sources */,
 				C91D9EDF1DDC23230029F02B /* MapViewController.swift in Sources */,
 				FC88022F1DF1062800C6EFD7 /* FreebieCell.swift in Sources */,
+				FC1DE0971DFB7BD7000EF921 /* DetailViewController.swift in Sources */,
 				C931F02D1DEE7F940014B727 /* AddViewController.swift in Sources */,
 				C91D9EE11DDC356E0029F02B /* ListViewController.swift in Sources */,
 				C91D9EE51DDC40E20029F02B /* CustomView.swift in Sources */,
